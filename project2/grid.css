@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Space+Grotesk:wght@300;500;700&display=swap');
+
+
+.item-a {
+  grid-area: header;
+}
+h1 {
+  background-color: black;
+  font-family: 'Nabla', cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 75px;
+  line-height: 1.15;
+  margin-top: 100px;
+}
+
+.item-b {
+  grid-area: main;
+}
+body {
+    font-family: 'space grotesk', sans-serif;
+    font-weight: 300;
+    background-color: #000000;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+  }
+}
+.item-c {
+  grid-area: sidebar;
+}
+.item-d {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
