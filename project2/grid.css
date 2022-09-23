@@ -8,7 +8,33 @@
 
 }
 
-h1 {
+.navbar {
+  display: flex;
+  width: 100%;
+  position: sticky;
+  column-gap: 60px;
+  top: 20px;
+  background-color: #FBC51C;
+  color: #F4540E;
+  padding: 20;
+}
+.navitab {
+  font-family: 'space grotesk', monospace;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 20px;
+
+}
+.sidebar {
+  width: 25%;
+  height: 25vh; // experiment with this value, try changing to 110vh
+  min-height: 200px;
+  overflow: auto;
+  position: sticky;
+  top: 5%;
+}
+
+.header h1 {
   background-color: black;
   font-family: 'Nabla', cursive;
   font-weight: 700;
@@ -17,28 +43,122 @@ h1 {
   line-height: 1.15;
   margin-top: 100px;
 }
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
 
-h2 {
-  background-color: black;
-  font-family: 'space Grotesk', sans-serif;
-  font-weight: bolder;
-  font-style: normal;
-  color: white
-  font-size: 40px;
-  line-height: 1.15;
-  margin-top: 30px;
+.header2 img {
+  float: right;
+  width: 100px;
+  height: 100px;
+}
+
+.div2 {
+    background-color: #000033;
+    border-radius: 40px;
+    padding: 50px;
+    height: 200px;
+    width: 100px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px yellow;
+}
+
+.divleft {
+    width: 50%;
+    margin-right: : 0px;
+    float: right;
+    padding: 0px;
+    box-sizing: border-box;
+    border-top: 4px solid #FBC51C;
+    border-bottom: 4px solid #F4540E;
+}
+
+.divright {
+      width: 48%;
+      margin: 0px;
+      float: left;
+      padding: 0px;
+      box-sizing: border-box;
+      border-top: 4px solid #FBC51C;
+      border-collapse: collapse;
+}
+.divright img {
+    width:auto;
+    height:auto;
+
+}
+.multiplyimg {
+    mix-blend-mode:hard-light;
+}
+
+.caption {
+    color: #F4540E;
+    font-family: 'space grotesk', monospace;
+    font-size: 11px;
+    text-align: right;
+    border-bottom: 4px solid #FBC51C;
+    margin-bottom: 1em;
+
+    }
+
+/*  */
+
+div {
+  display: block;
 }
 
 body {
-    background-color: black;
-    font-family: 'space grotesk', sans-serif;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    color: white;
-  	box-sizing: border-box;
-  }
+  font-family: 'space grotesk', sans-serif;
+  font-weight: 300;
+  background-color: #000000;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: white;
+}
+
+h1 {
+  font-family: 'Nabla', cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 75px;
+  line-height: 1.15;
+}
+
+/* animated subheaders */
+h2 {
+  font-style: 'space grotesk', monospace;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+/*hover glow for h2 */
+
+h2 span{
+  transition: .5s linear
+}
+h2:hover span:nth-child(1){
+  margin-right: 5px
+}
+h2:hover span:nth-child(1):after{
+  content: "'";
+}
+h2:hover span:nth-child(2){
+  margin-left: 30px
+}
+h2:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #FBC51C,
+               0 0 20px #FBC51C,
+               0 0 40px #FBC51C;
+}
+
 
   .grid {
   	display: grid;
