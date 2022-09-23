@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Space+Grotesk:wght@300;500;700&display=swap');
 
 .navbar {
@@ -9,13 +11,44 @@
   background-color: #FBC51C;
   color: #F4540E;
   padding: 20;
+  align-items: center;
+	justify-content: center;
 }
 .navitab {
   font-family: 'space grotesk', monospace;
   font-weight: 400;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 60px;
 
+}
+
+.fixed, .sticky
+{
+  font-size: 1.4em;
+  padding: 10px;
+  z-index: 1;
+}
+
+.fixed
+{
+  position: fixed;
+  background-color: black;
+  color: white;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.inside-container
+{
+  top: 70%;
+  mix-blend-mode:screen;
+  z-index: 3;
+  left: 30%;
+  height: 200px;
+  width: 200px;
+  overflow: auto;
 }
 
 .header h1 {
@@ -141,4 +174,11 @@ h2:hover span{
   text-shadow: 0 0 10px #FBC51C,
                0 0 20px #FBC51C,
                0 0 40px #FBC51C;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; /* Five equal-sized columns */
+	grid-gap: 40px;
+	padding: 50px;
 }
