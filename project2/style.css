@@ -1,12 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Space+Grotesk:wght@300;500;700&display=swap');
-* {
-  list-style: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-	box-sizing: border-box;
-
-}
 
 .navbar {
   display: flex;
@@ -25,7 +17,6 @@
   margin-left: 20px;
 
 }
-
 
 .header h1 {
   background-color: black;
@@ -151,14 +142,3 @@ h2:hover span{
                0 0 20px #FBC51C,
                0 0 40px #FBC51C;
 }
-
-
-  .grid {
-  	display: grid;
-  	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  	grid-gap: 40px;
-  	padding: 40px;
-  }
-  .big-block {
-  	grid-area: 2 / 2 / 4 / 4;
-  	   }
