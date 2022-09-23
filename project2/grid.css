@@ -25,14 +25,7 @@
   margin-left: 20px;
 
 }
-.sidebar {
-  width: 25%;
-  height: 25vh; // experiment with this value, try changing to 110vh
-  min-height: 200px;
-  overflow: auto;
-  position: sticky;
-  top: 5%;
-}
+
 
 .header h1 {
   background-color: black;
